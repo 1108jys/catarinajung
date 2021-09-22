@@ -10,37 +10,32 @@
     src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
   />
 </a>
-<script type="text/javascript">
- Kakao.init('6691ff7f4fa81b600c7818382b8be7bc');
-  function sendLink() {
-    Kakao.Link.sendDefault({
+<script type='text/javascript'>
+  //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('6691ff7f4fa81b600c7818382b8be7bc');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
       objectType: 'feed',
       content: {
         title: '용우와 예슬이의 결혼식에 초대합니다.',
         description: '10월 23일 낮 12시 명동성당 대성전',
-        imageUrl:
-          'https://postfiles.pstatic.net/MjAyMTA5MjNfMjI3/MDAxNjMyMzI1NTY5ODQ3.fqmnz5J8ZHg0czMXNub73x_ZQsMFpXtZ6tuFQPj-FlYg.MtpIxLa8eUA_qEJ_oJUOq4MpbjzcuejcGgMENNSdlZog.JPEG.happycata/open_graph.jpg?type=w966',
+        imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        link: {
           mobileWebUrl: 'http://ywyswedding.quv.kr/',
-          webUrl: 'http://ywyswedding.quv.kr/',
-        },
-      },
-      social: {
-        like_count: 100,
-        comment_count: 200,
+          webUrl: 'http://ywyswedding.quv.kr/'
+        }
       },
       buttons: [
         {
           title: '모바일 청첩장 보기',
           link: {
             mobileWebUrl: 'http://ywyswedding.quv.kr/',
-            webUrl: 'http://ywyswedding.quv.kr/',
-          },
+            webUrl: 'http://ywyswedding.quv.kr/'
+          }
         },
-      ],
-    })
-  }
+      ]
+    });
+  //]]>
 </script>
-<!-- www.blackcats4567.com -->
-<!-- When clicking on the image/button, the address should be placed in Kakao Developers' Application> Platform> Web to be displayed successfully when clicked. -->
-  </body>
-</html>
